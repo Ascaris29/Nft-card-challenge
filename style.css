@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{ 
+
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue-main-bg: hsl(217, 54%, 11%);
+--very-dark-blue-card-bg: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+*
+{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body
+{
+    
+    
+    background-color: var(--very-dark-blue-main-bg);
+    color: var(--soft-blue);
+    font-family:"outfit", arial;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    
+    
+
+}
+
+
+#container
+{
+    background-color: var(--very-dark-blue-card-bg);
+    max-width:350px;
+    border-radius:10px;
+    width:85%;
+
+ 
+
+}
+
+.image
+{
+    position:relative;
+    cursor:pointer;
+}
+
+
+
+.img-card
+{
+    display:block;
+    max-width:100%;
+    height:auto;
+    padding:1.5rem;
+    cursor:pointer;
+  
+}
+
+.overlay
+{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background: hsla(178,100%,50%,0.5);
+    border-radius:5px;
+    opacity:0;
+    margin:1.5rem
+
+}
+.overlayicon
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.overlay:hover
+{
+    opacity:1;
+    transition-duration:0.5s
+}
+
+
+
+
+
+
+
+#info-card
+{
+    font-size:1em;
+    line-height:1.6em
+}
+
+#title
+{
+    font-size:1.4em;
+    color:var(--white);
+    margin: 1rem 1.6rem;
+    
+}
+
+#info-card
+{
+ margin:1.6rem;
+}
+
+.text-info
+{
+    
+}
+.text-info2
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top:0.7rem;
+    padding:0.5rem;
+}
+
+.text-1
+{
+    color:var(--cyan);
+    padding:0.5rem;
+    font-size:0.8em;
+}
+
+.icon-txt1
+{
+    margin:-0.3rem;
+}
+
+hr
+{
+    height: 0px;
+    border: none; 
+    border-top: 1px solid var(--soft-blue); 
+}
+
+.text-info3 img
+{
+    width:40px;
+    height:40px;
+    border:1px var(--white) solid;
+    border-radius:100px;
+    vertical-align:middle;
+   
+}
+.text-info3
+{
+     display:flex;
+    align-items:center;
+    white-space: nowrap;
+    margin:1rem 0;
+}
+
+.text-3
+{
+    margin:1rem;
+}
+
+.name
+{
+    margin:-1rem;
+    color:var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; padding:3rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
